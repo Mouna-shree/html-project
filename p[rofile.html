@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profile</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+  body {
+    font-family: 'Caligraphy', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
+    background-color: #5baae700;
+    margin: 0;
+    padding: 0;
+  }
+  .profile {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(204, 217, 130, 0.397);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  .profile img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  .profile h1 {
+    margin-top: 10px;
+  }
+  .profile p {
+    margin: 10px 0;
+  }
+  .hobbies {
+    margin-top: 20px;
+  }
+  .hobbies h2 {
+    margin-bottom: 10px;
+  }
+  .hobbies video,
+  .hobbies audio {
+    display: block;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .map{
+    margin-top:20px;
+  }
+</style>
+</head>
+<body>
+  <h1>PROFILE</h1>
+<div class="profile">
+  <img src="img.jpg" alt="Profile Image">
+  <h2>Mounashree P</h2>
+  <p>Geolocation:<span id=""geolocation">Kyathsandra,Tumkur,Karnataka,India</span></p>
+  <div class="map">
+    <iframe
+      width="100%"
+      height="300"
+      frameborder="0"
+      style="border:0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15552.069481746037!2d76.98513594533898!3d12.970740207832641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bafc5908fa1aca1%3A0xd3d546c50aefd001!2sGirinagara%2C%20Karnataka%20572130!5e0!3m2!1sen!2sin!4v1693378769791!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <h3>ABOUT ME</h3>
+  <p>I'm a passionate learner and explorer. I love hiking, photography, and singing music in my free time and most of the tym i make myseelf busy in making the things organised and proper its a ver delight for me to dance as it beecame the part of my life and oter importaqnt aspects are making social connections,joining the volutary gatherings its very helpful for me to be the part in someone accountance.At present I am  studying Engineering of software stream and eventualy coding becaqme my part of hobbies.
+    <br/>My social conectives are as follows.</p> <!-- Added more info here -->
+ <!-- Add icons and links -->
+ <div class="icons">
+  <a href="https://www.instagram.com/mouna_shree_37" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/in/https://www.linkedin.com/in/mounashree-p-b322a0255" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/Mouna-shree" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+  <div class="hobbies">
+    <h4>Hobbies</h4>
+    <p>Here are some of my hobbies:
+    </p>1.Extempore
+    <video controls>
+      <source src="vedio.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      <track label="English" kind="Extempore is my cup of tea" srclang="en" src="video-caption.vtt" default>
+    </video>
+    2.listening to music
+    <audio controls>
+      <source src="audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+      <track label="English" kind="captions" srclang="en" src="audio-caption.vtt" default>
+      </audio>
+      3.Reading books</div></br>
+      <img src="img1.jpg"></img>
+    </br>My project
+        <a href="isro.html">ISRO</a>
+</div>
+<script>
+
+  navigator.geolocation.getCurrentPosition(function(position){
+   var  geolocationElement = document.querySelector(".profile p span");
+   geolocationElement.textContent="Girinagar,Kyathsandra,Tumkur,Krnataka,Tumkur,Karnataka,India";
+  });
+</script>
+</body>
+</html>
